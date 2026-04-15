@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+        <div class="logo">ServiceHub</div>
+
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+
+        <div class="user">A</div>
+    </nav>
+
+    <!-- MAIN -->
+    <section class="main">
+
+        <!-- LEFT (CART) -->
+        <div class="cart-section">
+            <h2>Your Cart</h2>
+
+            <div id="cartItems">
+                <p id="emptyMsg">No items added</p>
+            </div>
+
+            <div class="total">
+                Total: ₹ <span id="total">0</span>
+            </div>
+        </div>
+
+        <!-- RIGHT (SERVICES) -->
+        <div class="service-section">
+
+            <h2>Browse Services</h2>
+            <p class="sub">Select services and book easily</p>
+
+            <div class="grid">
+
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/a6/07/0c/a6070ceb52e639424b18b08992e11041.jpg" alt="img">
+                    <h3>Hair Cut</h3>
+                    <p>₹200</p>
+                    <button onclick="addItem('Hair Cut',200)" type="button">Add</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.pinimg.com/1200x/d8/32/92/d832924cbdc1764e3e2305cbf637c33d.jpg" alt="img">
+                    <h3>Cleaning</h3>
+                    <p>₹500</p>
+                    <button onclick="addItem('Cleaning',500)" type="button">Add</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/d2/c3/22/d2c322a3d263b02604efbb14b7442ae3.jpg" alt="img">
+                    <h3>Car Wash</h3>
+                    <p>₹300</p>
+                    <button onclick="addItem('Car Wash',300)" type="button">Add</button>
+                </div>
+
+            </div>
+
+            <!-- BOOKING FORM -->
+            <div class="form-box">
+                <h3>Book Now</h3>
+
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+
+                <button onclick="book()" type="button">Book Now</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
